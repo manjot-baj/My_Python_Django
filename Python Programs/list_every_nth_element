@@ -1,0 +1,12 @@
+def myFunc(l, n):
+    new = []
+    count = 0
+    for i in l:
+        if count % n == n - 1:
+            new.append(i)
+        count = count + 1
+    return new
+
+
+a = myFunc([i for i in range(1, 100) if not i % 2 == 0], 5)
+print(a)
